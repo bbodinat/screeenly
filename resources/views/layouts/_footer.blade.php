@@ -1,4 +1,4 @@
-<div class="container c-footer text-center">
+{{-- <div class="container c-footer text-center">
     <ul class="list-inline">
         <li><a href="/imprint">Imprint</a></li>
         <li><a href="/terms">Terms of Service</a></li>
@@ -16,4 +16,4 @@
             </a>
         </li>
     </ul>
-</div>
+</div> --}}
