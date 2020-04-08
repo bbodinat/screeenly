@@ -20,7 +20,7 @@ class ChromeBrowser extends Browser implements CanCaptureScreenshot
             ->timeout(30)
             ->deviceScaleFactor(2)
             ->waitUntilNetworkIdle()
-            ->setOption('addStyleTag', json_encode(['content' => 'h1{ border: 2px solid red; }']))
+            // ->setOption('addStyleTag', json_encode(['content' => 'h1{ border: 2px solid red; }']))
             // ->select('h1')
             // ->blockDomains($domainsList)
             ->setDelay($this->delay * 100)
