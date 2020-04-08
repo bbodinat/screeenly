@@ -12,7 +12,7 @@
         "laravel/framework": "5.8.*",
         "laravel/socialite": "^4.0",
         "doctrine/dbal": "^2.5",
-        "spatie/browsershot": "^3.0",
+        "spatie/browsershot": "^3.35",
         "fideloper/proxy": "^4.0",
         "wnx/laravel-stats": "~2.0.0",
         "laravel/tinker": "^1.0",

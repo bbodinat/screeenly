@@ -25,7 +25,7 @@ class CreateScreenshotRequest extends FormRequest
     public function rules()
     {
         return [
-            'key'    => ['required', 'exists:api_keys,key'],
+            // 'key'    => ['required', 'exists:api_keys,key'],
             'url'    => ['required', 'url', 'active_url'],
             'width'  => ['sometimes', 'required', 'integer', 'max:2000', 'min:10'],
             'height' => ['sometimes', 'required', 'integer', 'min:10'],

@@ -27,7 +27,7 @@ class ScreenshotController extends Controller
      */
     public function store(CreateScreenshotRequest $request)
     {
-        $apiKey = $request->user()->first()->apiKeys()->where('key', $request->key)->first();
+        // $apiKey = $request->user()->first()->apiKeys()->where('key', $request->key)->first();
 
         try {
             $screenshot = $this->captureService
@@ -37,10 +37,10 @@ class ScreenshotController extends Controller
                             ->url(new Url($request->url))
                             ->capture();
 
-            $apiKey->apiLogs()->create([
-                'user_id' => $request->user()->first()->id,
-                'images' => $screenshot->getPath(),
-            ]);
+            // $apiKey->apiLogs()->create([
+            //     'user_id' => $request->user()->first()->id,
+            //     'images' => $screenshot->getPath(),
+            // ]);
 
             return response()->json([
                 'path'       => $screenshot->getPublicUrl(),
