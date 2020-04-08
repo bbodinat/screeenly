@@ -15,8 +15,9 @@ class ChromeBrowser extends Browser implements CanCaptureScreenshot
             ->ignoreHttpsErrors()
             ->windowSize($this->width, is_null($this->height) ? 768 : $this->height)
             ->timeout(30)
+            ->deviceScaleFactor(2)
             ->setDelay($this->delay * 100)
-            ->userAgent('screeenly-bot 2.0');
+            ->setOption('args', ['--disable-web-security']);
 
 
         if (config('screeenly.disable_sandbox')) {
